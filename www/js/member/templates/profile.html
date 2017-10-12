@@ -1,0 +1,61 @@
+<ion-view view-title="设置" hide-tabs="true">
+  <ion-content class="bgbg">
+    <ion-list>
+      <div class="padding-top"></div>
+      <ion-item class="item-remove-animate item-avatar item-icon-right border-y" ng-click="selectImg()">
+        <img src="img/ava.jpg" ng-src="{{userinfo.avatar}}" style="width: 50px;height: 50px;border-radius: 100px">
+        <span class="item-note padding-top">更改头像</span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <ion-item class="item-icon-right border-y" href="#/tab/user/profile/nameModify">
+        会员昵称
+        <span class="item-note" ng-bind="userinfo.alias"></span>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+      <div class="padding-top">
+        <ion-item class="item-icon-right border-y">
+          手机号
+          <span class="item-note" ng-bind="userinfo.mobile "></span>
+        </ion-item>
+
+        <ion-item class="item-icon-right border-y" href="#/tab/user/profile/emailModify">
+          会员邮箱
+          <span class="item-note" ng-bind="userinfo.email"></span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right border-y" href="#/tab/user/profile/genderModify">
+          性别
+          <span class="item-note" ng-bind="userinfo.gender"></span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right border-y"  href="#/tab/user/profile/birthdayModify">
+          出生日期
+          <span class="item-note" ng-bind="userinfo.birthday | date:'yyyy-MM-dd'"></span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+      </div>
+
+      <div class="padding-top">
+        <ion-item class="item-icon-right border-y" href="#/tab/user/profile/passwordModify">
+          修改密码
+          <span class="item-note">修改</span>
+          <i class="icon ion-chevron-right icon-accessory"></i>
+        </ion-item>
+
+        <ion-item class="item-icon-right border-y">
+          版本号
+          <span class="item-note">V1.0</span>
+        </ion-item>
+      </div>
+    </ion-list>
+
+    <div class="row">
+      <div class="col">
+        <button class="button button-outline button-block button-light " style="background-color: #fff;border-color:#fafafa;"
+                ng-click="exitZLG()"><span class="assertive">退出登录</span></button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

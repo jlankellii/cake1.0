@@ -1,0 +1,123 @@
+<ion-view view-title="我">
+  <ion-content class="bgbg">
+    <div class="myModel-every myOrders margin-top20">
+      <div class="row padding-top20"></div>
+      <div class="row">
+        <div class="col col-25 col-center  padding-left">
+          <img class="circle-img" src="img/ava.jpg"style="width: 70px;height: 70px;border-radius: 70px">
+        </div>
+        <div class="col col-33  col-center light" style="padding-left: 0">
+          <div>
+            <span class="fontBtnSize1" style="color: #222222"></span>
+          </div>
+          <div>
+            <div class="fontBtnSize1 myColor-small">
+              等级: <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="col col-center text-right ">
+          <button class="button button-icon icon ion-ios-gear-outline light " style="color: #fe410a" ng-click="seeUserProfile()"></button>
+        </div>
+      </div>
+    </div>
+
+    <!--我的订单-->
+    <div class="myModel-every myOrders margin-top20" >
+      <div class="row">
+        <div class="col col-65 myTitle-size col-center myColor-small">我的订单</div>
+        <div class="col col-35 text-right">
+          <button class="button button-icon button-small  myColor-small" ng-click="seeUserOrder(0)"  style="color: #999">查看全部订单 </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row margin-top10 myModel-every border-bo">
+      <div class="col text-center" ng-click="seeUserOrder(1)">
+        <img src="img/order-1.jpg" style="width: 24px;height: 24px">
+        <br><span class="myColor-small order-img-text">待付款</span>
+      </div>
+      <div class="col text-center" ng-click="seeUserOrder(2)">
+        <img src="img/order-2.jpg" style="width: 26px;height: 24px">
+        <br><span class="myColor-small order-img-text">待发货</span>
+      </div>
+      <div class="col text-center" ng-click="seeUserOrder(3)">
+        <img src="img/order-3.jpg" style="width: 26px;height: 24px">
+        <br><span class="myColor-small order-img-text">待收货</span>
+      </div>
+    </div>
+    </div>
+
+    <!--在线客服-->
+    <div class="myModel-every margin-top20 myColor-small">
+      <a class="row" style="color: #999" ng-click="messageDetils()">
+        <div class="col col-10 text-center">
+          <img src="img/phone.png" style="width: 70%;float: left;">
+        </div>
+        <div class="col col-67 myTitle-size col-center">在线客服</div>
+        <div class="col col-20" style="padding-left: 70px;">
+            <i class="ion ion-ios-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+    <!--生日助手-->
+    <div class="myModel-every margin-top20 myColor-small">
+      <a class="row" style="color: #999" ng-click="goBir()">
+        <div class="col col-10 text-center">
+          <img src="img/birthday.png" style="width: 70%;float: left;">
+        </div>
+        <div class="col col-67 myTitle-size col-center">生日助手</div>
+        <div class="col col-20 " style="padding-left: 70px;">
+            <i class="ion ion-ios-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+    <!--<div class="myModel-every myColor-small border-bo">
+      <a class="row" style="color: #999">
+        <div class="col col-10 text-center">
+          <img src="img/position.png" style="width: 70%;float: left;">
+        </div>
+        <div class="col col-67 myTitle-size col-center">地址管理</div>
+        <div class="col col-20 padding-left70">
+            <i class="ion ion-ios-arrow-right"></i>
+        </div>
+      </a>
+    </div>-->
+    <div class="myModel-every myColor-small border-bo">
+      <a class="row" style="color: #999" ng-click="addr()">
+        <div class="col col-10 text-center">
+          <img src="img/footer.png" style="width: 70%;float: left;">
+        </div>
+        <div class="col col-67 myTitle-size col-center">地址管理</div>
+        <div class="col col-20"  style="padding-left: 70px;">
+            <i class="ion ion-ios-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+
+    <div class="myModel-every margin-top20 myColor-small border-bo">
+      <a class="row" style="color: #999" ng-click="seeUserProfile()">
+        <div class="col col-10 text-center">
+          <img src="img/setting.png" style="width: 70%;float: left;">
+        </div>
+        <div class="col col-67 myTitle-size col-center">设置</div>
+        <div class="col col-20"  style="padding-left: 70px;">
+            <i class="ion ion-ios-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+    <div class="myModel-every margin-top20 myColor-small">
+      <a class="row" style="color: #999" ng-click="seeAbout()">
+        <div class="col col-10 text-center">
+          <img src="img/about.png" style="width: 70%;float: left;">
+        </div>
+        <div class="col col-67 myTitle-size col-center">关于</div>
+        <div class="col col-20" style="padding-left: 70px;">
+          <i class="ion ion-ios-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+
+  </ion-content>
+
+</ion-view>

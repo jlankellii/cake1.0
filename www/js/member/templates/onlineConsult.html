@@ -1,0 +1,34 @@
+<ion-view view-title="在线客服" hide-tabs="true">
+  <div class="bar bar-header">
+    <button class="button button-small button-icon icon ion-ios-arrow-left" ng-click="goBack()"></button>
+  </div>
+  <ion-content class="bgbg">
+    <div id="convo" data-from="Sonu Joshi">
+      <ul class="chat-thread" ng-repeat="item in items" style="margin-left: 20px;margin-top: 15px;">
+        <li>{{item.content}}</li>
+        <li>{{item.cont}}</li>
+      </ul>
+    </div>
+  </ion-content>
+  <ion-footer-bar align-title="left" class="bar-light" resize-foot-bar>
+    <div class="y-footer-btn-wrap">
+      <button class="button button-icon icon ion-ios-mic-outline y-footer-btn-left">
+      </button>
+    </div>
+    <label class="item item-input y-footer-input">
+      <textarea msd-elastic ng-model="send_content"></textarea>
+      <div class="buttons">
+        <button class="y-footer-btn button button-icon icon ion-happy-outline"></button>
+      </div>
+    </label>
+    <div class="y-footer-btn-wrap">
+      <div class="buttons" ng-show="!send_content || send_content === ''">
+        <button class="button button-icon icon ion-ios-plus-outline y-footer-btn-left">
+        </button>
+      </div>
+      <div class="y-send-button" ng-hide="!send_content || send_content === ''">
+        <p>发送</p>
+      </div>
+    </div>
+  </ion-footer-bar>
+</ion-view>

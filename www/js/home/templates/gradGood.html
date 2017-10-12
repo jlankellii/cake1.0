@@ -1,0 +1,21 @@
+<ion-view view-title="毕业季" hide-tabs="true">
+  <ion-content class="bgbg">
+    <div class="list card" ng-repeat="item in items">
+      <a ng-click="special()" class="" style="text-decoration:none">
+      <div class="item item-image">
+        <img ng-src="{{item.src}}">
+      </div>
+      <div class="item row">
+        <div class="col col-66">
+          <h3 class="bt_font">{{item.bt}}</h3>
+          <h4 class="product-fontSize">{{item.bty}}</h4>
+        </div>
+        <div class="col col-34" style="color: #98989f;">
+          <h4 class="bt_font" >价格：<span style="color:#ef473a">{{item.price}}</span></h4>
+          <h4 class="bt_font">月销:  <span>{{item.sale}}</span></h4>
+        </div>
+      </div>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

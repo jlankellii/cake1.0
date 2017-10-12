@@ -1,0 +1,66 @@
+<ion-view view-title="申请试吃" hide-tabs="true">
+  <ion-content class=" padding scroll-content has-header BG">
+    <form name="myForm" novalidate="novalidate" ng-submit="register()">
+      <div class="list input_sy">
+        <div class="row">
+        <label class="item item-input-inset padding-lost6">
+          <div class="col col-25">
+            <span class="input-label inputLabel">用户名</span>
+          </div>
+          <div class="col col-75">
+            <input class="no-input-top" type="text" name="name" ng-model="user.name" required placeholder="张三"
+                   maxlength="11"/>
+          </div>
+          <span ng-show="myForm.name.$valid"></span>
+        </label>
+        </div>
+        <div class="row ">
+          <label class="item item-input-inset padding-lost6">
+            <div class="col col-25">
+              <span class="input-label inputLabel">所在地址</span>
+            </div>
+           <div class="col col-75">
+             <input class="no-input-top" type="text" name="address" ng-model="user.address" required placeholder="成都理工大学"
+                    maxlength="11"/>
+           </div>
+            <span ng-show="myForm.address.$valid"></span>
+          </label>
+        </div>
+        <div class="row">
+          <label class="item item-input-inset padding-lost6">
+          <div class="col col-25">
+            <span class="input-label inputLabel">人数</span>
+          </div>
+            <div class="col col-75">
+              <input class="no-input-top" type="number" name="num" ng-model="user.num" required placeholder="3"
+                     maxlength="2"/>
+              <span ng-show="myForm.num.$valid"></span>
+            </div>
+          </label>
+        </div>
+        <div class="row">
+        <label class="item item-input-inset padding-lost6">
+          <div class="col col-25">
+            <span class="input-label inputLabel">联系方式</span>
+          </div>
+          <div class="col col-75">
+            <input class="no-input-top" type="number" name="phone" ng-model="user.phoneNum" required placeholder="156xxxx9080"
+                   maxlength="11"/>
+            <span ng-show="myForm.phone.$valid"></span>
+          </div>
+        </label>
+        </div>
+        <div class="row" style="padding-top: 10px;">
+          <div class="col col-33"></div>
+          <div class="col col-40" >
+            <div class="text-center">
+              <a class="button button-block button-outline button-assertive button-small" ng-click="checkForm()" style="border-radius: 100px;">提交</a>
+            </div>
+          </div>
+          <div class="col col-33"></div>
+        </div>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-view>

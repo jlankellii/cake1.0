@@ -1,0 +1,27 @@
+<ion-view view-title="添加地址" hide-tabs="true">
+  <ion-content class="bgbg">
+    <form style="padding:20px 20px 0 20px;">
+      <div class="list item-yy">
+        <label class="item item-input">
+          <span class="input-label">收货人</span>
+          <input type="text" placeholder="请输入收货人姓名">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">手机号码</span>
+          <input type="number" placeholder="请填写手机号码">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">配送地址</span>
+          <input type="number" placeholder="点击选择配送地址">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">详细地址</span>
+          <input type="number" placeholder="不用重复填写省">
+        </label>
+      </div>
+          <div class="text-center">
+            <a class="button button-block button-assertive" ng-click="checkForm()" >提交</a>
+          </div>
+    </form>
+  </ion-content>
+</ion-view>

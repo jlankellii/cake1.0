@@ -1,0 +1,94 @@
+  <div class="list card" style="margin-top: 70px;">
+    <div class="row">
+      <div class="col col-10">
+        <a class="item item-image">
+          <img src="img/top1.png" style="max-width: 30px;">
+        </a>
+      </div>
+      <div class="col col-33">
+        <a class="item item-image">
+          <img src="img/cre4.png" style="width: 100%;height: 100px;">
+        </a>
+      </div>
+      <div class="col col-34">
+        <p>梵尼兰开心花园蛋糕</p>
+        <div style="position:relative;">
+          <p style="padding-top: 8px;color:#ddd;text-decoration:line-through;">￥236.00</p>
+          <p style="color:#ef473a;margin-top: -10px;">￥156.00</p>
+        </div>
+      </div>
+      <div class="col  col-25 text-right" style="padding-top: 65px">
+        <a class="button button-icon button-outline button-assertive button-small" style="margin-top: 8px;margin-right: 5px;" ng-click="special()">立即抢购</a>
+      </div>
+    </div>
+  </div>
+  <div class="list card">
+    <div class="row">
+      <div class="col col-10">
+        <a class="item item-image">
+          <img src="img/top2.png" style="max-width: 30px;">
+        </a>
+      </div>
+      <div class="col col-33">
+        <a class="item item-image">
+          <img src="img/limit.png" style="width: 100px;height: 100px;">
+        </a>
+      </div>
+      <div class="col col-34">
+        <p>树莓芝士蛋糕</p>
+        <div style="position:relative;">
+          <p style="padding-top: 8px;color:#ddd;text-decoration:line-through;">￥68.00</p>
+          <p style="color:#ef473a;margin-top: -10px;">￥29.00</p>
+        </div>
+      </div>
+      <div class="col  col-25 text-right" style="padding-top: 65px">
+        <a class="button button-icon button-outline button-assertive button-small" style="margin-top: 8px;margin-right: 5px;" ng-click="special()">立即抢购</a>
+      </div>
+    </div>
+  </div>
+  <div class="list card">
+    <div class="row">
+      <div class="col col-10">
+        <a class="item item-image">
+          <img src="img/top3.png" style="max-width: 30px;">
+        </a>
+      </div>
+      <div class="col col-33">
+        <a class="item item-image">
+          <img src="img/limit5.png" style="width: 100px;height: 100px;">
+        </a>
+      </div>
+      <div class="col col-34">
+        <p>魔法奶宝</p>
+        <div style="position:relative;padding-top: 20px;">
+          <p style="padding-top: 8px;color:#ddd;text-decoration:line-through;">￥86.00</p>
+          <p style="color:#ef473a;margin-top: -10px;">￥32.00</p>
+        </div>
+      </div>
+      <div class="col  col-25 text-right" style="padding-top: 65px">
+        <a class="button button-icon button-outline button-assertive button-small" style="margin-top: 8px;margin-right: 5px;" ng-click="special()">立即抢购</a>
+      </div>
+    </div>
+  </div>
+  <div class="list card" ng-repeat="limit in limits">
+    <div class="row">
+      <div class="col col-10">
+      </div>
+      <div class="col col-33">
+        <a class="item item-image">
+          <img src="{{limit.src}}" style="width: 100px;height: 100px;">
+        </a>
+      </div>
+      <div class="col col-34">
+        <p>{{limit.bt}}</p>
+        <div style="position:relative;padding-top: 20px;">
+          <p style="padding-top: 8px;color:#ddd;text-decoration:line-through;">{{limit.price}}</p>
+          <p style="color:#ef473a;margin-top: -10px;">{{limit.sale}}</p>
+        </div>
+      </div>
+      <div class="col  col-25 text-right" style="padding-top: 65px">
+        <a class="button button-icon button-outline button-assertive button-small" style="margin-top: 8px;margin-right: 5px;" ng-click="special()">立即抢购</a>
+      </div>
+    </div>
+  </div>
+

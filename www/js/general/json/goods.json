@@ -1,0 +1,96 @@
+{
+  "goods":[
+    {
+      "id":"001",
+      "tab":"new",
+      "src":"img/cake5.png",
+      "bt":"雪域大理石芝士蛋糕",
+      "bty":"Marble Cheesecake",
+      "price":"￥298.00",
+      "sale": "558"
+    },
+    {
+      "id":"002",
+      "tab":"new",
+      "src":"img/cute.png",
+      "bt":"萝莉·冰淇淋蛋糕",
+      "bty":"Cheese&StrawberrySnowBear",
+      "price":"￥298.00",
+      "sale": "689"
+    },
+    {
+      "id":"003",
+      "tab":"new",
+      "src":"img/flower.png",
+      "bt":"玫瑰雪域芝士蛋糕",
+      "bty":"Rose Cheesecake",
+      "price":"￥320.00",
+      "sale": "888"
+    },
+    {
+      "id":"004",
+      "tab":"new",
+      "src":"img/wordc.png",
+      "bt":"环游世界·秋冬季蛋糕",
+      "bty":"Around The World Cake",
+      "price":"￥336.00",
+      "sale": "439"
+    },
+    {
+      "id":"005",
+      "tab":"limit",
+      "src":"img/limit4.png",
+      "bt":"Mr.慕",
+      "price":"￥68.00",
+      "sale": "￥28.00"
+    },
+    {
+      "id":"006",
+      "tab":"limit",
+      "src":"img/limit3.png",
+      "bt":"豆趣",
+      "price":"￥210.00",
+      "sale": "￥156.00"
+    },
+    {
+      "id":"007",
+      "tab":"will",
+      "src":"img/will1.png",
+      "bt":"草莓格格",
+      "price":"￥230.00",
+      "sale": "￥115.00"
+    },
+    {
+      "id":"008",
+      "tab":"will",
+      "src":"img/will7.png",
+      "bt":"雪上芭蕾",
+      "price":"￥250.00",
+      "sale": "￥125.00"
+    },
+    {
+      "id":"009",
+      "tab":"will",
+      "src":"img/will5.png",
+      "bt":"四喜方子",
+      "price":"￥148.00",
+      "sale": "￥89.00"
+    },
+    {
+      "id":"010",
+      "tab":"will",
+      "src":"img/will6.png",
+      "bt":"蓝莓派",
+      "price":"￥268.00",
+      "sale":"￥135.00"
+    },
+    {
+      "id":"011",
+      "tab":"will",
+      "src":"img/will4.png",
+      "bt":"树莓芝士",
+      "price":"￥268.00",
+      "sale":"￥135.00"
+    }
+  ]
+}

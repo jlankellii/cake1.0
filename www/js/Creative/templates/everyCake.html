@@ -1,0 +1,24 @@
+<ion-view title="芝士蛋糕" hide-tabs="true">
+  <ion-content class="bgbg">
+    <div class="row" style="flex-wrap: wrap;margin-left: 15px;">
+      <div class="col col-40 list card list-y" ng-repeat="class in classes" style="background: white;">
+        <a ng-click="special()" class="" style="text-decoration:none">
+          <div class="item item-image full-image" style="height: 110px;-webkit-user-drag:none">
+            <img class="full-image" ng-src="{{class.src}}" alt="" >
+          </div>
+          <span class="product-title ng-binding">{{class.bt}}</span>
+          <div class="row">
+            <div class="col col-50" style="margin-right: 15px;margin-left: -10px;">
+              <span class="product-title ng-binding">{{class.price}}</span>
+            </div>
+            <div class="col col-50 text-right">
+              <p class="product-title">月销:<span style="padding-left: 0px">{{class.sale}}</span></p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+  </ion-content>
+</ion-view>

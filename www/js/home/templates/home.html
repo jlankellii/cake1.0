@@ -1,0 +1,99 @@
+<ion-view hide-nav-bar="true" hide-tabs="false">
+  <ion-header-bar align-title="left" class="item-input-inset myTitle-bg" style="opacity: 0.9;background-image:none;background-color: #fafafa">
+    <div class="button button-icon" ng-click="cityChoose()">
+      <div class="text-center" style="">
+        <span style="display: flex;font-size: 8px;">{{cityDatas[0].data}}</span>
+        <i class="fa fa-angle-down" aria-hidden="true" style="font-size: 24px"></i>
+      </div>
+    </div>
+    <div class="item-input-wrapper myProduct-bg no-search-pad">
+      <i class="icon ion-search placeholder-icon" style="color:#f3f3f3" on-tap="clearSearch()"></i>
+      <a href="#tab/home/good-list" style="width: 100%;">
+        <input id="search" type="search" placeholder="搜索蛋糕类型" style="height: 24px;line-height: 16px;"ng-model="searchCont.key"
+               ng-disabled="true">
+      </a>
+    </div>
+    <div class="buttons" ng-click="goMessage();">
+      <div class="text-center" style="padding-left:10px;line-height:13px;font-size: 9px;position: relative">
+        <i class="icon ion-ios-chatbubble-outline" style="font-size: 24px"></i><span
+        style="display: flex;font-size: 8px">消息</span>
+        <span ng-show="redButtonSwich" class="badge badge-assertive"
+              style="position: absolute;top:0;right:0;font-size: 6px;border: 1px solid #ffffff;background-color: #fff;padding: 3px 3px;min-width:0;">
+				</span>
+      </div>
+    </div>
+  </ion-header-bar>
+  <ion-content class="bgbg">
+    <div>
+      <!-- start 轮播图-->
+      <ion-slide-box auto-play="true"   slide-interval=2000  does-continue="true" delegate-handle="slideimgs"
+                     class="slidebox"  on-slide-changed="slideHasChanged($index)" style="margin-top: -1px;">
+        <ion-slide>
+          <div class="box banner" ng-click="goTime()"><img style="width: 100%;" src="img/banner/banner.png" /> </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="box banner"><img style="width: 100%;" ng-click="goBp()" src="img/banner/banner2.jpg" /></div>
+        </ion-slide>
+        <ion-slide class="box banner" >
+          <div class="box banner"><img style="width: 100%;" src="img/banner/banner4.jpg" /></div>
+        </ion-slide>
+        <ion-slide class="box banner" >
+          <div class="box banner"><img style="width: 100%;" src="img/banner/banner5.jpg" /></div>
+        </ion-slide>
+      </ion-slide-box>
+      <!-- end 轮播图-->
+
+    </div>
+    <div class="row home-title-box" on-swipe-left="seeAfter()">
+      <div class="col col-25 text-center padding-box0">
+        <a ng-click="limitTime()">
+          <i class=""></i>
+          <img class="circle-img1" ng-src="img/get1.png" width="36" height="36">
+          <p class="product-fontSize">限时特惠</p>
+        </a>
+      </div>
+      <div class="col col-25 text-center">
+        <a ng-click="freeEat()">
+          <img class="circle-img1" ng-src="img/get2.png" width="36" height="36">
+          <p class="product-fontSize">免费试吃</p>
+        </a>
+      </div>
+      <div class="col col-25 text-center">
+        <a ng-click="graduate()">
+          <img class="circle-img1" ng-src="img/get3.png" width="36" height="36">
+          <p class="product-fontSize">毕业季</p>
+        </a>
+      </div>
+      <div class="col col-25 text-center">
+        <a ng-click="discount()">
+          <img class="circle-img1" ng-src="img/get4.png" width="36" height="36">
+          <p class="product-fontSize">优惠券</p>
+        </a>
+      </div>
+    </div>
+    </div>
+    <div class="row" on-swipe-left="seeAfter()">
+      <div class="col text-center padding-top20">
+        <i class="icon ion-ios-heart assertive"></i> <span class="product-fontSize">热门推荐</span>
+      </div>
+    </div>
+    <div class="list card" ng-repeat="item in items" style="margin-top: 0px;">
+      <a ng-click="special()" class="" style="text-decoration:none">
+      <div class="item item-image">
+        <img ng-src="{{item.src}}">
+      </div>
+      <div class="item row">
+        <div class="col col-66">
+          <h3 class="bt_font">{{item.bt}}</h3>
+          <h4 class="product-fontSize">{{item.bty}}</h4>
+        </div>
+        <div class="col col-34" style="color: #98989f;">
+          <h4 class="bt_font" >价格：<span style="color:#ef473a">{{item.price}}</span></h4>
+          <h4 class="bt_font">月销:  <span style="padding-left: 10px;">{{item.sale}}</span></h4>
+        </div>
+      </div>
+      </a>
+    </div>
+  </ion-content>
+
+</ion-view>

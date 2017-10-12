@@ -1,0 +1,26 @@
+<ion-view view-title="我的订单" hide-tabs="true">
+  <ion-nav-buttons side="right">
+    <div class="buttons">
+      <button class="button icon ion-ios-search-strong" style="color:#fe410a;border: none" ng-click="searchOrder()">
+      </button>
+    </div>
+  </ion-nav-buttons>
+  <ion-header-bar class="bar bar-subheader" style="dispaly:block; margin-left:-10px;">
+    <div class="tabs" style="height:45px;">
+      <a class="tab-item" style="padding-right: 15px;color: #fe410a;" ng-class="{true: 'active', false: 'inactive'}[total]" ng-click="totalOrder()">全部</a>
+      <a class="tab-item" style="padding-right: 0px;" ng-class="{true: 'active', false: 'inactive'}[future]"  ng-click="futureOrder()">待付款</a>
+      <a class="tab-item" style="padding-left: 15px;" ng-class="{true: 'active', false: 'inactive'}[hold]" ng-click="holdOrder()">待发货</a>
+      <a class="tab-item" style="padding-left: -5px;" ng-class="{true: 'active', false: 'inactive'}[user]" ng-click="userOrder()">待收货</a>
+    </div>
+  </ion-header-bar>
+  <ion-content class="bgbg" no-tap-scroll="true" on-scroll="getScrollPosition()" delegate-handle="orderList">
+    <ion-refresher pulling-text="下拉刷新" on-refresh="doRefresh(comolainFlag)"></ion-refresher>
+    <div class="row" style="padding-top: 120px">
+      <div class="col col-20"></div>
+      <div class="col col-60 text-center"><img src="img/none.png" style="width: 150px;height: 150px"><p style="color: #cbcbcb;font-family: 宋体;padding-top: 50px;font-size: 20px">暂无订单</p></div>
+      <div class="col col-20"></div>
+    </div>
+  </ion-content>
+  <div class="position-goTo text-center" ng-show="showTop"><i class="icon ion-android-arrow-up" ng-click="goTop()"></i>
+  </div>
+</ion-view>

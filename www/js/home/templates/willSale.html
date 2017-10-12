@@ -1,0 +1,24 @@
+<div class="" style="margin-top: 70px;"></div>
+<div class="list card" ng-repeat="will in wills" style="" >
+  <a ng-click="special()" class="" style="text-decoration:none">
+      <div class="row">
+        <div class="col col-34">
+          <a class="item item-image">
+            <img src="{{will.src}}" style="width: 100px;height: 100px;">
+          </a>
+        </div>
+        <div class="col col-34" style="padding-left: 10px;">
+          <p>{{will.bt}}</p>
+          <div style="position:relative;padding-top: 20px;">
+            <p style="padding-top: 8px;color:#ddd;text-decoration:line-through;">{{will.price}}</p>
+            <p style="color:#ef473a;margin-top: -10px;">{{will.sale}}</p>
+          </div>
+        </div>
+        <div class="col  col-34 text-right" style="padding-top: 65px">
+          <a class="button button-icon button-outline button-assertive button-small" style="margin-top: 8px;margin-right: 5px;" ng-click="special()">立即抢购</a>
+        </div>
+      </div>
+  </a>
+    </div>
+
+

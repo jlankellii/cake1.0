@@ -1,0 +1,24 @@
+
+<ion-view view-title="城市选择" style="background:#fff;" hide-tabs="true">
+  <ion-content>
+    <div class="text-center padding-top10">
+      <p class="product-fontSize">选择你要的收货地址，送货更快哟~</p>
+    </div>
+    <div style="padding-bottom:120px;">
+      <div class="city_choose"style="color:#666;background:#F5F5F5;padding:4px 16px;">当前收货地区</div>
+      <div class="choose_city_data row" >
+        <div class="col col-80 choose_city_border" style="color: #666;border-right-style:none" id="nowStr">{{cityDatas[0].data}}</div>
+        <div class="col col-20 text-right">
+          <i class="icon ion-checkmark"style="padding-right: 10px;color: #ef473a" ></i>
+        </div>
+      </div>
+      <div  ng-repeat="d in cityDatas | filter:cityName">
+        <div class="choose_city_abc" style="color:#666;background:#F5F5F5;padding:4px 16px;" ng-if="d.iniData!=''">{{d.iniData}}</div>
+        <div class="choose_city_data" >
+          <div class="choose_city_border"  style="padding:10px 0px;color: #666" ng-click="choice($event)" >{{d.data | filter:cityName}}</div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+

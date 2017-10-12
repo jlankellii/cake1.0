@@ -1,0 +1,17 @@
+<ion-view view-title="修改资料" hide-tabs="true">
+  <ion-nav-buttons side="right">
+    <button class="button button-outline button-stable" style="color: red;border-color: #fff;font-weight: normal" ng-click="save()" >保存</button>
+  </ion-nav-buttons>
+  <ion-content class="padding scroll-content has-header bgbg" on-scroll="false">
+    <ion-list>
+      <ion-item >
+        <p>出生日期</p>
+        <div class="item-button-right" ion-datetime-picker date ng-model="dateSelected.birthdayDate" title="title">
+          <button class="button button-clear button-assertive">
+            <i class="icon ion-ios-calendar-outline"></i>
+          </button>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

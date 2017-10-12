@@ -1,0 +1,15 @@
+<ion-view view-title="限时优惠" hide-tabs="true">
+  <div class="tabs-striped tabs-top tabs-background-light tabs-color-assertive ssy">
+    <div class="tabs" style="border-style: none;">
+      <a class="tab-item active"  ng-class="{true: 'active', false: 'inactive'}[isActive]" ng-click="endSale()">
+        <span >距离结束</span>
+      </a>
+      <a class="tab-item" ng-class="{true: 'active', false: 'inactive'}[noActive]" ng-click="willSale()">
+        <span >即将开始</span>
+      </a>
+    </div>
+  </div>
+  <ion-content class="bgbg">
+    <div ng-include="contentUrl"></div>
+  </ion-content>
+</ion-view>
